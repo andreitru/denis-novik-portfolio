@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Denis Novik portfolio</title>
   <link rel="stylesheet" href="./build/styles/main.min.css">
 </head>
+
 <body>
-<script src="./build/scripts/script.js"></script>
+  <header class="header">
+    <div class="container header__container">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="#" class="header__link active">Home</a></li>
+          <li class="header__item"><a href="#about" class="header__link">About me</a></li>
+          <li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
+          <li class="header__item"><a href="#portfolio" class="header__link">Portfolio</a></li>
+          <li class="header__item"><a href="#contacts" class="header__link">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">Denis Novik</h1>
+        <p class="hero__text text">UX | UI designer</p>
+        <p class="hero__text text">24 years old, Minsk</p>
+        <div class="themes">
+          <button class="themes__light">light</button>
+          <span class="themes__span">|</span>
+          <button class="themes__dark">dark</button>
+        </div>
+        <div class="hero__img-container">
+          <img src="src/img/main.jpg" alt="Denis Novik photo" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__container">
+        <h2 class="about__title title">About me</h2>
+        <p class="about__text text">
+          Hi, I'm Denis – UX/UI designer from Minsk.
+          <br>
+          I'm interested in design and everything connected with it.
+        </p>
+        <p class="about__text text">
+          I'm studying at courses "Web and mobile design
+          <br>
+          interfaces" in IT-Academy.
+        </p>
+        <p class="about__text text">
+          Ready to implement excellent projects
+          <br>
+          with wonderful people.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container skills__container">
+        <h2 class="skills__title title">Skills</h2>
+        <p class="skills__text text">I work in such programs as</p>
+        <div class="skills__programs">
+          <div class="programs photoshop">
+            <p class="programs__text">Adobe Photoshop</p>
+            <div class="programs__stars">
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star"></i>
+            </div>
+          </div>
+          <div class="programs illustrator">
+            <p class="programs__text">Adobe Illustrator</p>
+            <div class="programs__stars">
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star"></i>
+              <i class="star"></i>
+            </div>
+          </div>
+          <div class="programs after-effects">
+            <p class="programs__text">Adobe After Effects</p>
+            <div class="programs__stars">
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star"></i>
+            </div>
+          </div>
+          <div class="programs figma">
+            <p class="programs__text">Figma</p>
+            <div class="programs__stars">
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star star-active"></i>
+              <i class="star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container portfolio__container">
+        <h1 class="portfolio__title title">Portfolio</h1>
+        <div class="portfolio__figures">
+          <figure class="portfolio__figure">
+            <img src="/src/img/online-fashion-store.jpg" alt="online-fashion-store" class="portfolio__img">
+            <figcaption class="portfolio__caption">Online fashion store - Homepage</figcaption>
+          </figure>
+          <figure class="portfolio__figure">
+            <img src="/src/img/reebok_web.jpg" alt="reebok_web" class="portfolio__img">
+            <figcaption class="portfolio__caption">Reebok Store - Concept</figcaption>
+          </figure>
+          <figure class="portfolio__figure">
+            <img src="/src/img/braun_web.jpg" alt="braun_web" class="portfolio__img">
+            <figcaption class="portfolio__caption">Braun Landing Page - Concept</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container">
+        <h1 class="contacts__title title">Contacts</h1>
+        <p class="contacts__text text">
+          Want to know more or just chat?
+          <br>
+          You are welcome!
+        </p>
+        <button class="contacts__button">Send message</button>
+        <ul class="contacts__social">
+          <li class="social"><a href="#" class="social__link social__link--in"></a></li>
+          <li class="social"><a href="#" class="social__link social__link--inst"></a></li>
+          <li class="social"><a href="#" class="social__link social__link--be"></a></li>
+          <li class="social"><a href="#" class="social__link social__link--dr"></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__text">Like me on</p>
+      <p class="footer__text">LinkedIn, Instagram, Behance, Dribble</p>
+    </div>
+  </footer>
+  <script src="./build/scripts/script.js"></script>
 </body>
+
 </html>
