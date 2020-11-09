@@ -9,11 +9,14 @@
   }
   &__programs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   &__program {
     margin-top: 32px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 18%;
     height: 200px;
     background-position: center;
@@ -29,24 +32,25 @@
     margin-top: 37px;
     display: flex;
     justify-content: space-around;
+    max-width: 166px;
+    width: 100%;
   }
-  
 }
 
 .photoshop {
-  background-image: url('../img/photoshop.svg');
+  background-image: url("../img/photoshop.svg");
 }
 
 .illustrator {
-  background-image: url('../img/AI.svg');
+  background-image: url("../img/AI.svg");
 }
 
 .after-effects {
-  background-image: url('../img/ae.svg');
+  background-image: url("../img/ae.svg");
 }
 
 .figma {
-  background-image: url('../img/Figma.svg');
+  background-image: url("../img/Figma.svg");
   background-size: 60px;
 }
 
@@ -56,13 +60,38 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../img/Star-grey.svg');
+  background-image: url("../img/Star-grey.svg");
 }
 
 .star-active {
-  background-image: url('../img/Star.svg');
+  background-image: url("../img/Star.svg");
 }
 
 .figma .skills__program-stars {
   margin-top: 53px;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    &__program {
+      width: 50%;
+      margin-bottom: 68px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .skills {
+    &__container {
+      padding-top: 77px;
+      padding-bottom: 92px;
+    }
+    &__title {
+      margin-bottom: 36px;
+    }
+    &__program {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
 }

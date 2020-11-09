@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <nav class="header__nav">
+      <nav class="header__nav header__nav--showed">
         <ul class="header__list">
           <li class="header__item"><a href="#" class="header__link header__link--active">Home</a></li>
           <li class="header__item"><a href="#about" class="header__link">About me</a></li>
@@ -19,6 +19,10 @@
           <li class="header__item"><a href="#portfolio" class="header__link">Portfolio</a></li>
           <li class="header__item"><a href="#contacts" class="header__link">Contacts</a></li>
         </ul>
+        <button class="header__close btn-reset close">
+          <span class="close__line"></span>
+          <span class="close__line"></span>
+        </button>
       </nav>
     </div>
   </header>
@@ -31,14 +35,23 @@
             <p class="hero__text text">UX | UI designer</p>
             <p class="hero__text text">24 years old, Minsk</p>
           </div>
-          <div class="themes">
+          <div class="themes themes--showed">
             <button class="themes__btn btn-reset themes__btn--active">light</button>
             <span class="themes__span">|</span>
             <button class="themes__btn btn-reset">dark</button>
           </div>
+          <button class="hero__burger btn-reset burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
         </div>
         <div class="hero__img-container">
-          <img src="src/img/main.jpg" alt="Denis Novik photo" class="hero-img">
+          <picture>
+            <source media="(min-width: 376px)" srcset="src/img/main.jpg">
+            <source media="(max-width: 375px)" srcset="src/img/main-min.jpg">
+            <img src="src/img/main.jpg" alt="Denis Novik photo" class="hero-img">
+          </picture>
         </div>
       </div>
     </section>
@@ -119,15 +132,18 @@
         <div class="portfolio__figures">
           <figure class="portfolio__figure">
             <img src="/src/img/online-fashion-store.jpg" alt="online-fashion-store" class="portfolio__img">
-            <figcaption class="portfolio__caption"> <a href="#" class="portfolio__caption-link" target="_blank">Online fashion store - Homepage</a> </figcaption>
+            <figcaption class="portfolio__caption"> <a href="#" class="portfolio__caption-link" target="_blank">Online
+                fashion store - Homepage</a> </figcaption>
           </figure>
           <figure class="portfolio__figure">
             <img src="/src/img/reebok_web.jpg" alt="reebok_web" class="portfolio__img">
-            <figcaption class="portfolio__caption"> <a href="#" class="portfolio__caption-link" target="_blank">Reebok Store - Concept</a> </figcaption>
+            <figcaption class="portfolio__caption"> <a href="#" class="portfolio__caption-link" target="_blank">Reebok
+                Store - Concept</a> </figcaption>
           </figure>
           <figure class="portfolio__figure">
             <img src="/src/img/braun_web.jpg" alt="braun_web" class="portfolio__img">
-            <figcaption class="portfolio__caption"> <a href="#" class="portfolio__caption-link" target="_blank">Braun Landing Page - Concept</a> </figcaption>
+            <figcaption class="portfolio__caption"> <a href="#" class="portfolio__caption-link" target="_blank">Braun
+                Landing Page - Concept</a> </figcaption>
           </figure>
         </div>
       </div>

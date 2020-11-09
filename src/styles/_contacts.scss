@@ -16,10 +16,10 @@
     font-weight: 700;
     font-size: 18px;
     border-radius: 30px;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
   &__button:hover {
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     transform: scale(1.1);
   }
   &__social {
@@ -39,7 +39,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 
     &--in {
       background-image: url("../img/linkedin.svg");
@@ -55,7 +55,26 @@
     }
   }
   &__link:hover {
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts {
+    &__container {
+      padding-top: 76px;
+    }
+    &__title {
+      margin-bottom: 32px;
+    }
+    &__button {
+      width: 100%;
+      max-width: 316px;
+      margin-top: 42px;
+    }
+    &__social {
+      margin-top: 48px;
+    }
   }
 }

@@ -21,3 +21,19 @@
     color: var(--color-black);
   }
 }
+
+@media (max-width: 576px) {
+  .portfolio {
+    &__container {
+      padding-top: 75px;
+      padding-bottom: 5px;
+    }
+    &__title {
+      margin-bottom: 72px;
+    }
+    &__caption {
+      margin-top: 28px;
+      margin-bottom: 80px;
+    }
+  }
+}
