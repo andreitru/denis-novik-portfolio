@@ -11,7 +11,7 @@
 
 :root {
   --color-black: #070707;
-  --color-grey: #828282;
+  --color-gray: #828282;
   --main-background-color: #fff;
   --second-background-color: #f6f6f6;
 }
@@ -39,4 +39,24 @@ ul {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
 }

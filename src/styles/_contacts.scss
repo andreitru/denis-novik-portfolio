@@ -1,0 +1,61 @@
+.contacts {
+  &__container {
+    padding-top: 109px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 23px;
+  }
+  &__button {
+    margin-top: 34px;
+    padding: 10px 28px;
+    background-color: var(--color-black);
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: transform .2s ease-in-out;
+  }
+  &__button:hover {
+    transition: transform .2s ease-in-out;
+    transform: scale(1.1);
+  }
+  &__social {
+    margin-top: 86px;
+    max-width: 342px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.social {
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s ease-in-out;
+
+    &--in {
+      background-image: url("../img/linkedin.svg");
+    }
+    &--inst {
+      background-image: url("../img/instagram.svg");
+    }
+    &--be {
+      background-image: url("../img/behance.svg");
+    }
+    &--dr {
+      background-image: url("../img/dribble.svg");
+    }
+  }
+  &__link:hover {
+    transition: transform .2s ease-in-out;
+    transform: scale(1.1);
+  }
+}
