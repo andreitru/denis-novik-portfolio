@@ -39,9 +39,10 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    color: var(--color-gray);
   }
   &__btn--active {
-    font-weight: 700;
+    color: var(--color-black);
   }
   &__span {
     font-weight: 700;
