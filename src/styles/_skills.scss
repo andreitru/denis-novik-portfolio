@@ -2,16 +2,28 @@
   &__container {
     padding-top: 85px;
     padding-bottom: 173px;
+
+    @include xs {
+      padding-top: 77px;
+      padding-bottom: 92px;
+    }
   }
+
   &__title {
     margin-bottom: 56px;
     text-align: center;
+
+    @include xs {
+      margin-bottom: 36px;
+    }
   }
+
   &__programs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   &__program {
     margin-top: 32px;
     display: flex;
@@ -22,12 +34,24 @@
     background-position: center;
     background-size: 89px;
     background-repeat: no-repeat;
+
+    @include sm {
+      width: 50%;
+      margin-bottom: 68px;
+    }
+
+    @include xs {
+      width: 100%;
+      margin-top: 20px;
+    }
   }
+
   &__program-text {
     font-size: 14px;
     color: var(--color-gray);
     padding-top: 167px;
   }
+
   &__program-stars {
     margin-top: 37px;
     display: flex;
@@ -71,27 +95,3 @@
   margin-top: 53px;
 }
 
-@media (max-width: 768px) {
-  .skills {
-    &__program {
-      width: 50%;
-      margin-bottom: 68px;
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .skills {
-    &__container {
-      padding-top: 77px;
-      padding-bottom: 92px;
-    }
-    &__title {
-      margin-bottom: 36px;
-    }
-    &__program {
-      width: 100%;
-      margin-top: 20px;
-    }
-  }
-}

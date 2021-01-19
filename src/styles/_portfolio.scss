@@ -6,15 +6,32 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--second-background-color);
+
+    @include xs {
+      padding-top: 75px;
+      padding-bottom: 5px;
+    }
   }
+
   &__title {
     margin-bottom: 54px;
+
+    @include xs {
+      margin-bottom: 72px;
+    }
   }
+
   &__caption {
     margin-top: 39px;
     margin-bottom: 100px;
     text-align: center;
+
+    @include xs {
+      margin-top: 28px;
+      margin-bottom: 80px;
+    }
   }
+
   &__caption-link {
     font-size: 18px;
     text-decoration: underline;
@@ -22,18 +39,3 @@
   }
 }
 
-@media (max-width: 576px) {
-  .portfolio {
-    &__container {
-      padding-top: 75px;
-      padding-bottom: 5px;
-    }
-    &__title {
-      margin-bottom: 72px;
-    }
-    &__caption {
-      margin-top: 28px;
-      margin-bottom: 80px;
-    }
-  }
-}

@@ -1,19 +1,59 @@
 .header {
+  &__nav {
+    @include xs {
+      display: none;
+
+      &--showed {
+        height: 100vh;
+        width: 100%;
+        // overflow: clip;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        background-color: var(--main-background-color);
+      }
+    }
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
     padding-top: 31px;
     padding-bottom: 35px;
     border-bottom: 1px solid var(--color-gray);
+
+    @include xs {
+      border: none;
+      flex-direction: column;
+      padding: 60px 26px;
+    }
   }
+
+  &__item {
+    @include xs {
+      margin-bottom: 50px;
+    }
+  }
+
   &__link {
     color: var(--color-gray);
     font-size: 18px;
     font-weight: 700;
+
+    @include xs {
+      font-size: 34px;
+      line-height: 42px;
+    }
   }
+
   &__link--active {
     color: var(--color-black);
   }
+
   &__link::after {
     display: block;
     content: "";
@@ -21,54 +61,28 @@
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
   }
+
   &__link:hover::after {
     transform: scaleX(1);
   }
+
   &__link--active:hover::after {
     transform: scaleX(0);
   }
+
   &__close {
     display: none;
-  }
-}
 
-@media (max-width: 576px) {
-  .header {
-    &__nav {
-      display: none;
-    }
-    &__nav--showed {
-      height: 100vh;
-      width: 100%;
-      // overflow: clip;
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 10;
-      background-color: var(--main-background-color);
-    }
-    &__list {
-      border: none;
-      flex-direction: column;
-      padding: 60px 26px;
-    }
-    &__item {
-      margin-bottom: 50px;
-    }
-    &__link {
-      font-size: 34px;
-      line-height: 42px;
-    }
-    &__close {
+    @include xs {
       display: block;
       width: 30px;
       height: 30px;
     }
   }
-  .close {
+}
+
+.close {
+  @include xs {
     position: fixed;
     top: 76px;
     right: 25px;
@@ -82,9 +96,11 @@
       height: 4px;
       background-color: var(--color-gray);
     }
+
     &__line:first-child {
       transform: rotate(45deg);
     }
+
     &__line:last-child {
       transform: rotate(-45deg);
     }

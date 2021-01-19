@@ -3,21 +3,19 @@
     padding-top: 45px;
     padding-bottom: 50px;
     text-align: center;
+
+    @include xs {
+      padding-top: 47px;
+    }
   }
+  
   &__text {
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
     color: var(--color-gray);
-  }
-}
 
-@media (max-width: 576px) {
-  .footer {
-    &__container {
-      padding-top: 47px;
-    }
-    &__text {
+    @include xs {
       font-size: 18px;
       line-height: 22px;
     }
